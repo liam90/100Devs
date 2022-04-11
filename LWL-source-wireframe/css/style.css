@@ -1,0 +1,149 @@
+/* Built @ screen size 1440px */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* BASE STYLES */
+body {
+  width: 100%;
+  font-family: 'open Sans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: hsl(239, 22%, 39%);
+  padding: 0%;
+  margin: 0%;
+}
+
+h1{
+  font-size:  2em;
+  width: 76%;
+}
+
+h2 {
+  width: 22%;
+  font-size: 1.5em;
+}
+
+ul {
+  display: inline;
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1em;
+}
+
+p {
+  color: hsl(0, 0%, 69%);
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(239, 22%, 39%);
+  width: 5%;
+  height: 2vh;
+}
+
+input {
+  width: auto;
+  height: 2.5vh;
+}
+/* LAYOUT */
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 3vh;
+  background-color: hsl(205,53%,97%);
+  padding-top: .5em;
+  margin-bottom: 6em;
+}
+.title {
+  float: left;
+  font-weight: 800;
+  font-size: 1.3em;
+  margin-left: 1em;
+  margin-right: 18em;
+}
+
+nav > button {
+  float: right;
+  margin-right: 4em;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  height: 80vh;
+  background-color: hsl(205,53%,97%);
+}
+
+.hero__img {
+  float: right;
+}
+
+.tagline__sec {
+  width: 30%;
+  height: 40vh;
+  margin-left: 12em;
+  padding-top: 3em;
+}
+input {
+  width: 60%;
+  height: 3vh;
+  border: none;
+  background-color: hsl(208,33%,91%);
+}
+.form__button {
+  width: 20%;
+  height: 3vh;
+  border-radius: 0 3px 3px 0;
+}
+
+.tagline__sec p {
+  width: 70%;
+  line-height: 1.5em;
+}
+
+/* FEATURES */
+.features {
+  margin-left: 10em;
+}
+
+.features section {
+  float: left;
+  width: 20%;
+  height: 18vh;
+  margin: 1em;
+  padding: 1em;
+}
+
+.third__link, .fourth__link {
+  margin-bottom: 2.3em;
+}
+
+/* FEATURE__1 */
+.feature__1 {
+  margin-left: 12em;
+}
+
+.feature__1 p {
+  width: 43%;
+  margin-bottom: 3em;
+}
+
+.feature__1 div {
+  width: 90%;
+  height: 3.5vh;
+  background-color: hsl(208,33%,91%);
+}

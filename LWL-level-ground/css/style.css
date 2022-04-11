@@ -1,0 +1,252 @@
+/* Built @ screen size 1440px */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --primary__color: hsl(213, 13%, 49%);
+  --secondary__color: hsl(0, 2%, 90%);
+  --footer__color: hsl(210, 31%, 12%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* CONTAINER */
+body {
+  font-family: 'Open Sans' Arial, Helvetica, sans-serif;
+
+}
+/* CONTAINER */
+main {
+  width: 100%;
+  height: 50vh;
+  background: var(--primary__color);
+  color: hsl(0, 0%, 100%);
+}
+/* CONTAINER */
+header {
+  width: 100%;
+  height: 6vh;
+}
+/* CONTAINER */
+nav {
+  padding-top: .5em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-right: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  float: right;
+  margin-right: 2em;
+  background-color: hsl(0, 0%, 100%);
+  color: var(--primary__color);
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  height: 3vh;
+  width: 5%;
+}
+
+nav img {
+  width: 2%;
+  margin-left: 33em;
+}
+/* CONTAINER */
+.main__text {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+.mission {
+  margin: 2em auto;
+  width: 61%;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.play {
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+small {
+  display: block;
+  margin-top: 5em;
+  color: hsl(232, 46%, 18%);
+}
+/* CONTAINER */
+.why__section {
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  color: hsl(232, 40%, 32%);
+  padding-top: 7em;
+}
+
+.why__section h2 {
+  font-size: 2em;
+}
+
+.why__section p {
+  font-size: 1.2em;
+  width: 42%;
+  margin: auto;
+}
+/* CONTAINER */
+.two__sections {
+  padding-top: 10em;
+  width: 100%;
+  height: 80vh;
+  background: var(--secondary__color);
+  color: hsl(232, 40%, 32%);
+}
+
+.sec__1 {
+  padding: .5em;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  float: left;
+}
+
+.sec__2 {
+  padding: .5em;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  float: right;
+}
+
+.two__sections div {
+  width: 45%;
+  height: 20vh;
+  margin: auto;
+  background-color: var(--primary__color);
+}
+
+.two__sections p {
+  width: 50%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.two__sections a {
+  background-color: none;
+  border: solid thin hsl(232, 40%, 32%);
+  font-size: .9em;
+  padding: 1em 2em;
+}
+/* CONTAINER */
+.volunteer {
+  padding-top: 6em;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  color: hsl(232, 40%, 32%);
+}
+
+.volunteer h3 {
+  margin-bottom: 0%;
+  font-size: 1.5em;
+}
+
+.volunteer p {
+  width: 34%;
+  font-size: 1.1em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.volunteer a {
+  background-color: none;
+  border: solid thin hsl(232, 40%, 32%);
+  padding: 1em 2em;
+}
+
+/* CONTAINER */
+footer {
+  width: 100%;
+  height: 30vh;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--footer__color );
+}
+/* CONTAINER */
+.social {
+  float: left;
+  clear: both;
+  padding-top: 3em;
+  display: inline;
+  width: 15%;
+  height: 4vh;
+}
+
+.map {
+  padding-left: 2.3em;
+  color: hsl(241, 18%, 48%);
+}
+
+.social__icons {
+  margin-left: 2.3em;
+  margin-bottom: 1em;
+}
+/* CONTAINER */
+.contact {
+  float: right;
+  clear: both;
+  width: 15%;
+  height: 20vh;
+}
+
+address {
+  margin: 0;
+  padding: 0;
+}
+
+.f__l__color, address > a:first-of-type{
+  color: hsl(0, 0%, 60%);
+}
+
+.company {
+  font-weight: 600;
+}
+
+.location {
+  display: block;
+}
+
+.footer__line {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1em;
+  border-bottom: solid thin hsl(0, 0%, 100%);
+  clear: both;
+}
+
+.legal__color {
+  margin-left: 2.4em;
+  margin-top: 1em;
+  color: hsl(0, 0%, 100%);
+  display: inline;
+}
+
+footer img {
+  float: right;
+  padding-right: 2em;
+}

@@ -1,0 +1,142 @@
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+     padding: 0%;
+     margin: 0%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* this is for all buttons on the page */
+a{
+     color: #499eff;
+     text-decoration: none;
+     font-weight: 600;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+     list-style: none;
+     display: flex;
+}
+li{
+     padding-right: .5rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* this is the page navigation */
+.navbar{
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     gap: 1em;
+     grid-template-columns: repeat(3, 1fr);
+     height: 2.5vw;
+     border-bottom: #eee 2px solid;
+}
+.course{
+     grid-column: 1 / 2;
+     grid-row: 1;
+     margin-right: 3rem;
+}
+.course::after{
+     content: url(/img/dropdown.png);
+     color: #499eff;
+     position: absolute;
+}
+.logo{
+     grid-column: 2 / 3;
+     grid-row: 1;
+}
+.nav-menu{
+     display: flex;
+}
+.nav-menu > li{
+     list-style: none;
+     padding: 1rem 2rem 0rem 0rem;
+}
+/* styling the text in the search field */
+::placeholder{
+     color: #499eff;
+}
+/*putting the search field next to courses */
+.search{
+     display: inline;
+}
+.search-input{
+     padding: .3rem;
+     border: none;
+     border-radius: .3rem;
+     background: #eee;
+}
+main{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-items: center;
+}
+aside{
+     width: 100%;
+     display: grid;
+}
+.student{
+     padding-top: 9rem;
+     margin: 0rem;
+     font-size: 3rem;
+}
+.lorem{
+     line-height: 2rem;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #888;
+}
+.learning{
+     padding-left: 21rem;
+}
+.main-menu > li > a{
+     background-color: #499eff;
+     color: #fff;
+     padding: .5rem;
+     border-radius: .3rem;
+     font-weight: 300;
+}
+#scroll-top{
+     width: fit-content;
+     padding: 0rem .3rem;
+     margin-right: 39em;
+     margin-bottom: .5rem;
+     line-height: 0rem;
+     border: 0rem;
+     background-color: #499eff;
+     border-radius: .3rem;
+     justify-self: end;
+}
+#scroll-top > a{
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 1300px) {
+     header{
+          width: 100%;
+     }
+}
