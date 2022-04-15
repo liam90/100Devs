@@ -1,3 +1,2 @@
-This is for LWL class07 homework
+This is for Learn with Loen homework ~~ #100Devs
 
-I'm juast creatiing 3 media queries ~ mobile, tablet, laptop for Layout 3 from class05
