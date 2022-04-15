@@ -18,7 +18,7 @@
 .clear {
   clear: both;
 }
-
+/* BUILT @ SCREEN SIZE 2560PX */
 body {
   width: 100%;
   height: 100vh;
@@ -29,11 +29,11 @@ body {
   background-color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
 }
-
+/* HEADER STYLES */
 header {
   width: 100%;
-  height: 65vh;
-  border: solid thin black;
+  height: 66vh;
+  padding: .3em;
 }
 
 nav {
@@ -42,7 +42,6 @@ nav {
   float: left;
   margin-right: .5em;
   padding: 0.5em;
-  border: solid thin black;
 }
 
 ul {
@@ -55,20 +54,15 @@ a {
 }
 
 li {
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 1em 0;
-}
-
-nav > img {
-  display: block;
-  margin: auto;
 }
 
 .gold__text {
   display: block;
-  margin-left: 2em;
   margin-bottom: 1em;
   font-size: 1.5em;
+  font-weight: 900;
   color: hsl(48, 100%, 60%);
 }
 
@@ -76,18 +70,108 @@ nav > img {
   font-size: 1.5em;
   margin-left: 2em;
 }
+/* MIDDLE SECTION STYLES */
+.mid__sec h1 {
+  font-size: 4em;
+  width: 75%;
+  margin: 0em 0em 0em .8em;
+}
 
-h1 {
-  font-size: 3em;
+.mid__sec img {
+  display: block;
+  margin-left: 3em;
+  width: 100%;
+  height: 50vh;
+}
+.mid__sec h3 {
+  margin: 0em 0em .3em 2.8em;
 }
 
 .mid__sec {
   float: left;
 }
-
+/* ASIDE STYLES */
 aside {
   float: right;
   width: 30%;
   height: 65vh;
-  border: solid thin black;
+}
+
+.aside__sec {
+  width: 100%;
+  height: 16.25vh;
+  padding: .5em;
+  border-bottom: solid thin hsl(0, 0%, 83%);
+}
+
+.aside__sec h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: .3em 0em;
+}
+
+.sec__2 h2 {
+  width: 90%;
+}
+/* MAIN STYLES */
+main {
+  width: 100%;
+  height: 70vh;
+  padding: 0 .5em .5em .5em;
+  /* border: solid thin black; */
+}
+
+main > h2 {
+  margin-left: 9.3em;
+  padding-bottom: .5em;
+  border-bottom: solid thin hsl(0, 0%, 83%);
+}
+
+.article__sec {
+  width: 90%;
+  height: 25vh;
+  margin-left: 14em;
+  border-bottom: solid thin hsl(0, 0%, 83%);
+}
+
+.separate {
+  float: left;
+  width: 50%;
+}
+
+.art__info {
+  float: left;
+}
+
+.art__info > p {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.article__parah {
+  float: right;
+  width: 28%;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: hsl(0, 0%, 71%);
+}
+
+.article__sec img {
+  float: right;
+  width: 20%;
+  height: 24vh;
+}
+
+.article__sec .tc__logo {
+  float: none;
+  width: 11%;
+  height: 2vh;
+}
+.article__sec .last__pic {
+  height: 15vh;
+}
+
+.article__sec:last-of-type {
+  height: 15.5vh;
 }
