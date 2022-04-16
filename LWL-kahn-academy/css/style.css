@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 /* Box Model Hack */
 *,
 *::before,
@@ -23,9 +25,56 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+body {
+     font-family: 'Roboto', sans-serif;
+     width: 100%;
+     padding: 1em;
+     font-size: 16px;
+     line-height: 1.5;
+}
 
-/* this is for all buttons on the page */
-a{
+header {
+     width: 100%;
+     height: 6vh;
+     padding-right: 12em;
+     border: solid thin black;
+     color: rgb(108, 144, 255);
+}
+
+ul {
+     list-style: none;
+     margin-top: 2em;
+}
+
+li {
+     display: inline;
+}
+
+/* LINKS */
+
+header a {
+     margin-left: 2em;
+     font-size: 1.3em;
+     font-weight: 700;
+
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+
+
+.float__left {
+     float: left;
+}
+
+.float__right {
+     float: right;
+}
+/* BUTTONS */
+/* a{
      color: #499eff;
      text-decoration: none;
      font-weight: 600;
@@ -37,14 +86,14 @@ ul{
 }
 li{
      padding-right: .5rem;
-}
+} */
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-/* this is the page navigation */
-.navbar{
+/* NAVIGATION */
+/* .navbar{
      display: grid;
      justify-items: center;
      align-items: center;
@@ -58,11 +107,7 @@ li{
      grid-row: 1;
      margin-right: 3rem;
 }
-.course::after{
-     content: url(/img/dropdown.png);
-     color: #499eff;
-     position: absolute;
-}
+
 .logo{
      grid-column: 2 / 3;
      grid-row: 1;
@@ -75,11 +120,11 @@ li{
      padding: 1rem 2rem 0rem 0rem;
 }
 /* styling the text in the search field */
-::placeholder{
+/* ::placeholder{
      color: #499eff;
-}
+} */
 /*putting the search field next to courses */
-.search{
+/* .search{
      display: inline;
 }
 .search-input{
@@ -100,6 +145,7 @@ aside{
 .student{
      padding-top: 9rem;
      margin: 0rem;
+     line-height: 1.5;
      font-size: 3rem;
 }
 .lorem{
@@ -116,27 +162,8 @@ aside{
      padding: .5rem;
      border-radius: .3rem;
      font-weight: 300;
-}
-#scroll-top{
-     width: fit-content;
-     padding: 0rem .3rem;
-     margin-right: 39em;
-     margin-bottom: .5rem;
-     line-height: 0rem;
-     border: 0rem;
-     background-color: #499eff;
-     border-radius: .3rem;
-     justify-self: end;
-}
-#scroll-top > a{
-     color: #fff;
-     font-family: Arial, Helvetica, sans-serif;
-}
+} */
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media (max-width: 1300px) {
-     header{
-          width: 100%;
-     }
-}

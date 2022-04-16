@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
 
 		<title>Kahn Academy</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+		<!-- FontAwesome -->
+		<script src="https://kit.fontawesome.com/02c50b57ae.js" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
-				<section class="cell-1" >
-					<a href="#" class="course">Courses</a>
-					<form action="search" class="search">
-						<input class="search-input" type="text" placeholder="Search">
-					</form>
-				</section>
-				<a href="https://www.khanacademy.org/" class="logo"><img src="/img/kahn_logo.png" alt="Kahn Academy Logo"></a>
-				<ul class="nav-menu">
-					<li class="donate"><a href="#">Donate</a></li>
-					<li class="login"><a href="#">Login</a></li>
-					<li class="sign up"><a href="#">Sign up</a></li>
+			<nav>
+				<a href="#" class="float__left">Courses <i class="fa-solid fa-caret-down"></i></a>
+				<form class="float__left" action="search">
+					<input class="float__left" type="text" placeholder="Search">
+				</form>
+				<a aria-colspan="float__left" href="https://www.khanacademy.org/" class="logo"><img src="assets/kahn_logo.png" alt="Kahn Academy Logo"></a>
+				<ul class="navigation float__right">
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Sign up</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<img class="learning" src="/img/hero_img.png" alt="Kids learing on computers.">
-			<aside>
-				<section class="lines">
-					<h1 class="student">For every student,<br>every classroom.<br>Real results.</h1>
-					<img src="/img/lines.png" alt="just some light green lines." class="lines">
+			<img src="assets/hero_img.png" alt="Kids learning on computers.">
+			<section class="mission">
+				<section class="student__parah">
+					<h1">For every student,every classroom.Real results.</h1>
+					<img src="assets/lines.png" alt="just some light green lines.">
 				</section>
-				<p class="lorem">We're a nonprofit with the mission to provide a free, world-class<br>education for anyone, anywhere.</p>
+				<p>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
 				<ul class="main-menu">
 					<li><a href="#">Learners</a></li>
 					<li><a href="#">Teachers</a></li>
 					<li><a href="#">District</a></li>
 					<li><a href="#">Parents</a></li>
 				</ul>
-			</aside>
-		</main>
-		<main>
-			<img class="learning" src="/img/hero_img.png" alt="Kids learing on computers.">
-			<aside>
-				<section class="lines">
-					<h1 class="student">For every student,<br>every classroom.<br>Real results.</h1>
-					<img src="/img/lines.png" alt="just some light green lines." class="lines">
-				</section>
-				<p class="lorem">We're a nonprofit with the mission to provide a free, world-class<br>education for anyone, anywhere.</p>
-				<ul class="main-menu">
-					<li><a href="#">Learners</a></li>
-					<li><a href="#">Teachers</a></li>
-					<li><a href="#">District</a></li>
-					<li><a href="#">Parents</a></li>
-				</ul>
-			</aside>
-		</main>
-		<main>
-			<img class="learning" src="/img/hero_img.png" alt="Kids learing on computers.">
-			<aside>
-				<section class="lines">
-					<h1 class="student">For every student,<br>every classroom.<br>Real results.</h1>
-					<img src="/img/lines.png" alt="just some light green lines." class="lines">
-				</section>
-				<p class="lorem">We're a nonprofit with the mission to provide a free, world-class<br>education for anyone, anywhere.</p>
-				<ul class="main-menu">
-					<li><a href="#">Learners</a></li>
-					<li><a href="#">Teachers</a></li>
-					<li><a href="#">District</a></li>
-					<li><a href="#">Parents</a></li>
-				</ul>
-				<!-- how to create a 'back to top' link -->
-				<button id="scroll-top">
-					<a href="#top" id="to-top">Back to top</a>
-				</button>
-			</aside>
+			</section>
 		</main>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
