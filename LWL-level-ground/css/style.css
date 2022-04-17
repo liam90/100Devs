@@ -1,4 +1,3 @@
-/* Built @ screen size 1440px */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
 
 :root {
@@ -12,6 +11,16 @@
 *::after {
   box-sizing: border-box;
 }
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
 /* CONTAINER */
 body {
   font-family: 'Open Sans' Arial, Helvetica, sans-serif;
@@ -40,6 +49,7 @@ ul {
 
 li {
   float: left;
+  font-size: 1.3em;
   margin-right: 1em;
 }
 
@@ -61,8 +71,8 @@ button {
 }
 
 nav img {
-  width: 2%;
-  margin-left: 33em;
+  width: 1.5%;
+  margin-left: 65em;
 }
 /* CONTAINER */
 .main__text {
@@ -71,6 +81,7 @@ nav img {
 
 h1 {
   font-size: 3.2em;
+  margin-top: 3em;
 }
 
 .mission {
