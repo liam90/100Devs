@@ -16,7 +16,7 @@ body {
 }
 
 .bar {
-  display: none;
+  visibility: hidden;
 }
 
 h1{
@@ -333,9 +333,9 @@ input::placeholder {
 /* @ screen size 425px (Large Mobile) */
 @media (max-width: 425px) {
   .bar {
-    display: inline;
-    /* padding-top: .5em;
-    padding-left: .5em; */
+    visibility: visible;
+    padding-top: .5em;
+    padding-left: .5em;
   }
   
   ul {
@@ -364,7 +364,7 @@ input::placeholder {
   .title {
     font-size: 2em;
     margin-left: 5.3em;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
   }
   
   /* MAIN */
