@@ -12,7 +12,7 @@
 :root {
   --primary__color: hsl(30, 100%, 50%);
 }
-
+/* UTILITIES */
 .clearfix::after {
   content: ".";
   display: block;
@@ -23,6 +23,10 @@
 
 .clear {
   clear: both;
+}
+
+.center {
+  text-align: center;
 }
 
 body {
@@ -70,7 +74,7 @@ li {
   margin-right: 4em;
 }
 
-li:hover {
+header li:hover {
   border-bottom: solid thin var(--primary__color);
 }
 
@@ -128,7 +132,7 @@ input:focus {
   outline: hsl(30, 90%, 50%);
 }
 
-.button {
+button {
   width: 20%;
   height: 4vh;
   border: none;
@@ -143,8 +147,8 @@ input:focus {
   margin-right: 2em;
 }
 
-/* MAIN */
-main {
+/* MAIN STYLES */
+.discover {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -162,8 +166,8 @@ main {
   margin-right: 15em;
 }
 
-.about {
-  font-size: 1.3em;
+.lead__span {
+  font-size: 1.5em;
   font-weight: 600;
   color: hsl(30, 100%, 50%);
 }
@@ -188,4 +192,117 @@ main {
   border-radius: 0 6px 6px 0;
   color: hsl(0, 0%, 100%);
   background-color: hsla(30, 90%, 50%, 0.600);
+}
+
+.specialty {
+  width:100%;
+  height: 70vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.specialty > p {
+  padding-top: 6em;
+}
+
+.order__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  width: 31%;
+  height: 4vh;
+  padding-left: 1.2em;
+  margin: auto;
+  border-bottom: solid thin hsl(9, 0%, 60%);
+}
+
+.order__menu ul {
+  margin: auto;
+}
+
+.order__menu li {
+  padding-bottom: .5em;
+  margin-bottom: 0em;
+  margin-left: 1.5em;
+}
+
+.order__menu li:hover {
+  color: var(--primary__color);
+  border-bottom: solid 2px var(--primary__color);
+  padding-bottom: 1.1em;
+}
+
+.menu__preview {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 35vh;
+  padding: 2em;
+  margin: 2em auto;
+}
+
+.preview__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.6) 50%, hsla(0, 0%, 40%, 0.6) 50%), url(/restaurant-site/assets/speciltiy_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dollar {
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 2em;
+}
+
+.rating {
+  margin: .5em 0;
+  color: hsl(51, 100%, 59%);
+}
+
+.meal {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.order__now {
+  width: 40%;
+  height: 3vh;
+  padding: 0 1.5em;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+
+.preview__2 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preview__3 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preview__4 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
