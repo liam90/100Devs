@@ -378,11 +378,11 @@ button {
   margin-bottom: 3em;
 }
 
-.fa-circle {
+.lg__dot {
   color: var(--primary__color);
 }
 
-.fa-2xs {
+.sm__dots {
   color: hsla(30, 90%, 50%, 0.3);
   margin: 0 .5em;
 }
@@ -425,4 +425,47 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 90%, 0.85) 50%, hsla(0, 0%, 90%, 0.85) 50%), url(/restaurant-site/assets/hours_next_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  order: 2;
+  width: 30%;
+  height: 40vh;
+  color: var(--primary__color);
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video .fa-layers {
+  color: var(--primary__color);
+  padding-top: 5em;
+  padding-right: 9em;
+}
+
+.left__chevron {
+  order: 1;
+  justify-self: flex-start;
+}
+
+.right__chevron {
+  order: 3;
+  justify-self: flex-start;
 }
