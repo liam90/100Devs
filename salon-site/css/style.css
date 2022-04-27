@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* VARIABLES */
+:root{
+    --primary__clr: hsl(223, 89%, 21%);
+    --white__accent__clr: hsl(0, 0%, 100%);
+    --btn__clr: hsl(223, 100%, 9%);
+}
+/* BASE STYLES */
+body {
+    width: 100%;
+    font-size: 16px;
+    color: var(--primary__clr);
+    background-color: var(--white__accent__clr);
+}
+
+h1 {
+    width: 50%;
+    font-size: 6em;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+ul {
+    list-style: none;
+    margin-left: 12em;
+}
+
+li {
+    display: inline;
+    margin-right: 5em;
+}
+
+
+li:hover {
+    padding-bottom: .5em;
+    border-bottom: solid thin var(--primary__clr);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 12%;
+    margin-bottom: 1em;
+}
+
+/* LAYOUT */
+header {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/assets/stylist__2.jpg);
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 25em;
+    border-bottom-right-radius: 25em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+    margin-bottom: 6em;
+    background-color: var(--white__accent__clr);
+}
+
+.company {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Ms Madi', Arial, Helvetica, sans-serif;
+}
+
+.book__app {
+    font-weight: 600;
+}
+
+.fa-minus {
+    padding-right: 1em;
+}
+
+.fa-layers-counter {
+    color: var(--white__accent__clr);
+    background-color: var(--primary__clr);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    color: var(--white__accent__clr);
+}
+
+.content__left {
+    margin-left: 15em;
+}
+
+.content__right {
+    font-size: .7em;
+    transform: rotate(90deg);
+}
+
+.tagline {
+    margin-bottom: 2em;
+}
+
+.services__btn {
+    background-color: var(--btn__clr);
+    padding: 1em 1em;
+}
+
+.pages {
+    float: right;
+    margin-right: 12em;
+    padding-top: 20em;
+    color: var(--white__accent__clr);
+}
+
+.discount {
+    width: 10%;
+    height: 20vh;
+    margin-left: 15em;
+    margin-top: 20em;
+    padding-top: .5em;
+    background-color: var(--btn__clr);
+    color: var(--white__accent__clr);
+}
+
+.first {
+    padding: 1em 1em;
+    margin: 1em 0;
+    border-left: solid medium var(--white__accent__clr);
+}
+
+.percent {
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+.twenty {
+    font-size: 2em;
+}
+
+.order__btn {
+    margin-left: 1em;
+    padding: 1em 1em;
+    background-color: var(--white__accent__clr);
+    color: var(--primary__clr);
+}
+
+.beauty__services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    padding-top: 6em;
+    padding-left: 9em;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 20vh;
+    text-align: center;
+    border-bottom: double medium var(--primary__clr);
+}
+
+main h3 {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+.more__space {
+    margin-top: 1.5em;
+}
+
+.extra__space {
+    margin-top: 1em;
+}
+
+.momentum {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;background-color: hsl(0, 0%, 90%);
+}
+
+.momentum__content {
+    width: 30%;
+    height: 30vh;
+}
+
+.momentum__content h2 {
+    width: 37%;
+    line-height: 1.3;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/service__volume.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 30vh;
+}
+
+.momentum__content p {
+    line-height: 1.5;
+    margin-bottom: 3em;
+
+}
+
+.read__more__btn {
+    background-color: var(--btn__clr);
+    color: var(--white__accent__clr);
+    padding: 1em;
+}
+
+
+.stylist{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.meet {
+    border-bottom: solid medium var(--primary__clr);
+}
+
+.stylist__1 {
+    width: 15%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white__accent__clr);
+    background-image: url(/assets/style__2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stylist__2 {
+    width: 15%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white__accent__clr);
+    background-image: url(/assets/stylist__1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stylist__3 {
+    width: 15%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white__accent__clr);
+    background-image: url(/assets/stylist__2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 6vh;
+    margin: 0 auto;
+    transform: translateY(2em);
+    background-color: var(--btn__clr);
+}
+
+.haircut__discount {
+    width: 100%;
+    height: 60vh;
+    padding-top: 5em;
+}
+
+.haircut__content {
+    width: 90%;
+    height: 50vh;
+    margin-inline: auto;
+    background-image: url(/assets/style__1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 9em;
+    padding-top: 9em;
+}
+
+.color {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.ten {
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.color__highlight {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.ten__off {
+    font-weight: 900;
+}
+
+.appointment {
+    padding: 1em 1.5em;
+    margin-top: 2em;
+    background-color: var(--btn__clr);
+    color: var(--white__accent__clr);
+}
+
+.our__look {
+    width: 100%;
+    /* height: 70vh; */
+    text-align: center;
+    padding-top: 3em;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.our__look, .fa-minus {
+    padding-left: 1em;
+}
+
+.grid__container {
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    gap: 1em;
+}
+
+.style__1 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/assets/style__1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style__2 {
+    width: 100%;
+    height: auto;
+    grid-row: span 2;
+    background-image: url(/assets/style__2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style__3 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/assets/style__3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style__4 {
+    width: 100%;
+    height: auto;
+    grid-row: span 2;
+    background-image: url(/assets/style__4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style__5 {
+    width: 100%;
+    height: auto;
+    grid-row: span 2;
+    background-image: url(/assets/stylist__1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style__6 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(/assets/stylist__2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
