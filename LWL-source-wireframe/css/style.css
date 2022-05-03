@@ -332,10 +332,14 @@ input::placeholder {
 
 /* @ screen size 425px (Large Mobile) */
 @media (max-width: 425px) {
+  .menu__bar {
+    display: flex;
+  }
+
   .bar {
     visibility: visible;
-    padding-top: .5em;
-    padding-left: .5em;
+    /* padding-top: .5em;
+    padding-left: .5em; */
   }
   
   ul {
