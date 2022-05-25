@@ -1,0 +1,56 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12em 0em;
+}
+
+label {
+  font-size: 2em;
+  color: hsl(20, 100%, 60%);
+}
+
+input {
+  margin: 1em 0em;
+  padding: .3em 1em;
+  border: solid thin hsl(128, 98%, 16%);
+  border-radius: 12px;
+}
+
+input:focus {
+outline: solid thin hsl(20, 100%, 43%);
+}
+
+button {
+  padding: .5em 1em;
+  border: none;
+  border-radius: 9px;
+  background-color: hsl(128, 98%, 16%);
+  color: hsl(20, 100%, 60%);
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.3em;
+  color: hsl(20, 100%, 60%);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
