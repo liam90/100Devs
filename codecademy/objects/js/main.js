@@ -47,7 +47,7 @@ const spaceship2 = {
 }
 
 //  Reassign color to be 'glorious gold'
-spaceship2,color = 'glorious gold'
+spaceship2.color = 'glorious gold'
 // Add a numEngines property with a number value between 1-10 
 spaceship2.numEngines = 6
 // Delete the 'Secret Mission' property
@@ -109,21 +109,4 @@ const spaceship3 = {
     }
   }
 }; 
-
-
-// Create a variable 'capFave' and assign the captain‘s 'favorite food' 
-// (the element in the 0th index of her 'favorite foods' array) to it.
-const capFave = spaceship3.crew.captain['favorite foods'][0]
-console.log(capFave)
-
-// Right now the passengers property has a value of null. Instead,
-// assign as its value an array of objects. These objects should represent
-// the spaceship‘s passengers as individual objects. Make at least one passenger object
-// in the array that has at least one key-value pair on it.
-
-
-// Create a variable firstPassenger and assign the first passenger as its value
-// (the element in the 0th index of the spaceship.passengers array you just made).
-// Make sure to use bracket and dot notation to get the passenger object through nested access
-// (don’t just copy the object into the variable!)
 
