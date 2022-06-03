@@ -323,15 +323,19 @@ const robot5 = {
   _model: '1E78V2',
   _energyLevel: 100,
   _numOfSensors: 15,
-  get numOfSensors(){
-    if(typeof this._numOfSensors === 'number'){
-      return this._numOfSensors;
+  set numOfSensors(num){
+    if(typeof num === 'number' && num >= 0){
+      return this._numOfSensors= num
     } else {
-      return 'Sensors are currently down.'
+      return 'Pass in a number that is greater than or equal to 0'
     }
   },
   
 };
+
+robot.numOfSensors = 100
+
+console.log(robot.numOfSensors)
 
 // Challenges
 
@@ -353,3 +357,174 @@ const robot5 = {
 
 // Challenge 5.
 // To check that the setter method worked, console.log() robot.numOfSensors.
+
+
+// Advanced Objects: Factory Functions
+// A factory function is a function that returns an object and can be reused to make multiple object instances.
+// Factory functions can also have parameters allowing us to customize the object that gets returned.
+
+const monsterFactory = (givenName, age, energySource, catchPhrase) => {
+  return {
+    givenName: givenName,
+    age: age,
+    energySource: energySource,
+    scare () {
+      console.log(catchPhrase)
+    }
+  }
+}
+// In the monsterFactory function above, it has four parameters and returns an object that has the
+// properties: name, age, energySource, and scare(). To make an object that represents a specific monster like a ghost,
+// we can call monsterFactory with the necessary arguments and assign the return value to a variable:
+
+const ghost =  monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!')
+ghost.scare()
+
+
+// Challenges
+// Challenge 1.
+// Instead of making individual robots like we’ve been doing, let’s make a factory function to make robots as we please!
+// Create a factory function named robotFactory that has two parameters model and mobile. Make the function return an object.
+// In the object, add a key of model with the value of the model parameter. Add another property that has a key of mobile with a value of the mobile parameter.
+// Then add a method named beep without a parameter that will log 'Beep Boop' to the console.
+
+// Challenge 2.
+// Use your factory function by declaring a const variable named tinCan. Assign to tinCan the value of calling robotFactory with the first argument of 'P-500' and the second argument of true.
+
+// Challenge 3.
+// Let’s now check what tinCan can do! Call .beep() on tinCan.
+// You should see 'Beep Boop' printed to the console which means the factory function produced a robot object! Play around with tinCan to check the other properties!
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep() {
+      console.log('Beep Boop')
+    }
+  }
+}
+
+const tinCan = robotFactory('P-500',true)
+
+tinCan.beep()
+
+
+// Advanced Objects: Property Value Shorthand
+// ES6 introduced some new shortcuts for assigning properties to variables known as destructuring.
+// In the previous exercise, we created a factory function that helped us create objects.
+// We had to assign each property a key and value even though the key name was the same as the parameter name we assigned to it.
+// To remind ourselves, here’s a truncated version of the factory function:
+
+const monsterFactory2 = (givenName, age) => {
+  return {
+    givenName: givenName,
+    age: age
+  }
+}
+
+// Imagine if we had to include more properties, that process would quickly become tedious! But we can use a destructuring technique,
+// called property value shorthand, to save ourselves some keystrokes. The example below works exactly like the example above:
+
+const monsterFactory3 = (givenName,age) => {
+  return {
+    givenName,
+    age
+  }
+}
+
+// Notice that we don’t have to repeat ourselves for property assignments! 
+
+
+function robotFactory3(model, mobile){
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}
+
+// To check that the property value shorthand technique worked:
+const newRobot = robotFactory('P-501', false)
+console.log(newRobot.model)
+console.log(newRobot.mobile)
+
+
+// Challenges
+// Challenge 1.
+// Use the property value shorthand and refactor the factory function
+
+// Advanced Objects: Destructure d Assignment
+// In destructured assignment we create a variable with the name of an object’s key that is wrapped in curly braces { } and assign to it the object.
+
+const robot6 = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+// Challenges
+
+// Challenge 1.
+// Use destructured assignment to create a const variable named functionality that extracts the functionality property of robot.
+// If you need a reminder on how to use destructured assignment, review the example in the narrative or check the hint.
+  const {functionality} = robot6
+
+// Challenge 2.
+// Since functionality is referencing robot.functionality we can call the methods available to robot.functionality simply through functionality.
+// Take advantage of this shortcut and call the .beep() method on functionality.
+functionality.beep()
+
+// Advanced Objects: Built in Object Methods
+// Challenges
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// What is missing in the following method call?
+const robotKeys = Object.keys(robot)
+
+console.log(robotKeys);
+
+// // Declare robotEntries below this line:
+const robotEntries = Object.entries(robot)
+
+console.log(robotEntries);
+
+// // Declare newRobot below this line:
+const newerRobot = Object.assign({laserBlaster: true}, {voiceRecognition: true}, robot)
+
+console.log(newRobot);
+
+
+// Challenge 1.
+// In main.js there is an object, robot. We’d like to grab the property names, otherwise known as keys, and save the keys in an array which is assigned to robotKeys.
+// However, there’s something missing in the method call.
+// Find out what we have to include by reading MDN’s Object.keys() documentation.
+
+
+
+// Challenge 2.
+// Object.entries() will also return an array, but the array will contain more arrays that have both the key and value of the properties in an object.
+// Declare a const variable named robotEntries and assign to it the entries of robot by calling Object.entries().
+// To find how to use Object.entries(), read the documentation at MDN.
+
+// Challenge 3.
+// Now what if we want another object that has the properties of robot but with a few additional properties. Object.assign() sounds like a great method to use,
+// but like the previous examples we should check Object.assign() documentation at MDN.
+// Declare a const variable named newRobot. newRobot will be a new object that has all the properties of robot and the properties in the following object: {laserBlaster: true, voiceRecognition: true}.
+// Make sure that you are not changing the robot object!
