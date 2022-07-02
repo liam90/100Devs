@@ -10,11 +10,11 @@
 // ######
 // #######
 
-// const hashtag = '#'
+const hashtag = '#'
 
-// for(i = 1; i <= 7; i++){
-//     console.log(hashtag.repeat(i))
-// }
+for(i = 1; i <= 7; i++){
+    console.log(hashtag.repeat(i))
+}
 
 // FIZZBUZZ
 
@@ -25,23 +25,23 @@
 // (This is actually an interview question that has been claimed to weed out a significant percentage of programmer candidates.
 // So if you solved it, your labor market value just went up.)
 
-// const randomNum = Math.round(Math.random()*50)
+const randomNum = Math.round(Math.random()*50)
 
-// const fizzBuzz = num => {
-//     for(let i = 1; i <= num; i++){
-//         if(i % 3 === 0 && i % 5 === 0){
-//             console.log('FizzBuzz')
-//         }else if(i % 3 === 0){
-//             console.log('Fizz')
-//         }else if(i % 5 === 0){
-//             console.log('Buzz')
-//         }else{
-//             console.log(i)
-//         }
-//     }
-// }
+const fizzBuzz = num => {
+    for(let i = 1; i <= num; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('FizzBuzz')
+        }else if(i % 3 === 0){
+            console.log('Fizz')
+        }else if(i % 5 === 0){
+            console.log('Buzz')
+        }else{
+            console.log(i)
+        }
+    }
+}
 
-// fizzBuzz(randomNum)
+fizzBuzz(randomNum)
 
 
 // Chessboard
